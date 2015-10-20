@@ -3,9 +3,18 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
 
+$teal-lighten-5: #e0f2f1;
+//variable for class="teal ligthen-2"
+$teal-lighten-2: #4db6ac;
+$dark-2: #00796b;
+$darkest: #004d40;
 /**
  * App-wide Styles
  */
+body {
+  background: $teal-lighten-5;
+}
+
 
 .browsehappy {
     margin: 0.2em 0;
@@ -72,137 +81,18 @@ body {
 /* 
 Center Rows 
 */
-.row-centered {
-    text-align: center;
-}
 
-.col-centered {
-    display: inline-block;
-    float: none;
-    /* reset the text-align */
-    
-    text-align: left;
-    /* inline-block space fix */
-    
-    margin-right: -4px;
-}
 
-.container {
- margin-top: 1.25em;
-}
 
-/* font styles */ 
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
-h1 {
-    font-size: 2em;
-    //Make the bottom margin 1 line-height / 36
-    font-weight: $bold;
-}
-
-h2 {
-    font-size: 1.5em;
-    font-weight: $bold;
-    .main-heading {
-        text-align: center;
-    }
-}
-
-.form-error {
-    color: red;
-    font-weight: $bold - 100;
-}
-
-.panel-heading {
-    font-weight: $bold;
-    text-align: center;
-}
-
-h1.blue-head {
-    color: #2b94c2;
-}
-
-h3 {
-    font-size: 1.25em;
-    font-weight: $light;
-    center {
-        text-align: center
-    }
-}
-
-p {
-    font-size: 1em;
-    font-weight: $light;
-    text-align: justify;
-    > em {
-        font-style: $italic;
-    }
-}
-
-.about-intro {
-    font-style: $italic;
-    text-align: justify;
-    padding: 1em;
-}
-
-.lr-heading {
-    text-align: center;
-}
-
-.header-text {
-    font-size: 1.25em;
-}
-
-.quote-text {
-    font-size: 1.25em;
-    padding: 5px;
-    text-align: center;
-    color: white;
-}
-
-.top-nav > li a {
-    font-size: 1.125em;
-}
-
-.button {
-    font-family: $font-one;
-    font-weight: $bold;
-}
-
-li a {
-    text-decoration: none;
-}
-
-.form-wrapper {
-    h2 {
-        text-align: center;
-    }
-}
-
-.main-heading {
-    text-align: center;
-}
-
-.footer-text {
-    font-size: 1em;
-     text-align: center;
-    font-weight: $bold;
-}
-
-a .button .border-button {
-    font-family: $font-one;
-    font-weight: $bold;
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-a:active {
-    font-weight: $bold;
-}
-
-select {
-    color: black;
-}
+  main {
+    flex: 1 0 auto;
+  }
 
 // Component styles are injected through grunt
 // injector

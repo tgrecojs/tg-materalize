@@ -1,42 +1,69 @@
-<div ng-include="'components/header/navbar.html'"></div>
-<div ng-include="'components/header/header.html'"></div>
-<div class="container">
-    <div class="panel panel-default">
-        <div class="panel-heading">Welcome to my Web Application!</div>
-        <div class="panel-body">
-            <p class="hidden-xs">
-                Thank you for visiting my web application. My name is Thomas Greco, and I am a software engineer based out of New York City. Currently, my main focus is building both web and mobile applications using JavaScript. That being said, my main areas of expertise are AngularJS, NodeJS, Sass CSS, and I have written a number of articles on using these technologies, as well as many others, for different companies. In addition to working in software development, I come from a background in graphic design, and I am extremely proficient with using different Adobe Creative Cloud Applications. Specifically, I have an extensive bit of knowledge in using PhotoShop, Illustrator, and Premiere Pro.</p>
-            <hr class="hidden-xs">
-            <p class="hidden-xs">
-                As of late August, I became the newest member of the SitePoint Premium Team. SitePoint Premium (formerly Learnable) provides users with access to books, video tutorials, and is really a great resource for those looking to learn development. The topics I have been dealing with range from creating build systems with GruntJS, to understanding the <code> module.exports </code> statement in JavaScript.
-            </p>
-            <hr class="hidden-xs">
-            <p class="lead hidden-xs"> Below is a list of some of the work I published. </p>
-            <p class="lead hidden-sm hidden-md hidden-lg">
-                If you are interested in working with me, you contact me <a ng-href="/contact"> here!</a> If you are simply poking around, check out some of the work I have published below!
-            </p>
-            <hr class="hidden-sm hidden-md hidden-lg">
-            <dl>
-                <dt><a href="http://bit.ly/1EON9rO">How to Write Modular Code Angular UI-Router &amp; Named Views</a></dt>
-                <dd>Article of using UI-Router to create an extremely modular, and maintainable AngularJS environment.</dd>
-                <dt><a href="http://bit.ly/gruntjs-sp"> 5 Minutes to Min-Safe Angular Code with Grunt</a></dt>
-                <dd>Here, I teach readers how to add dependency injection annotations to Angular code with Grunt.</dd>
-                <dt><a href="http://bit.ly/1KeLRJb">Understanding the Bower Package Manager</a>
-                </dt>
-                <dd>Short except that takes the confusion out of Bower for those new to package managers.</dd>
-                <dt><a href="http://bit.ly/1Qj3DKg">Up and Running With NativeScript</a></dt>
-                <dd>A concise, yet informative piece on how the NativeScript runtime allows native applications to be built with JavaScript.</dd>
-            </dl>
-            <hr>
-            <div class="form-group">
-                <label>Sign up for my newsletter!</label>
-                <input class="form-control" placeholder="Stay updated on my newest material!">
+<div ng-include="'components/material/navbar.html'"></div>
+<div class="header teal lighten-5">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1>Thomas Greco</h1>
+                <p>Software developer and teacher specialing in JavaScript, User Interface design, and user experience research.</p>
             </div>
         </div>
     </div>
 </div>
-<footer class="footer">
-    <div class="container">
-        <p>Created by Thomas Greco with <a href="https://twitter.com/tylerhhenkel">@tylerhenkel's</a> Angular-Fullstack </p>
+<div class="wrapper container">
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card teal lighten-1">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="assets/images/angular.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Angular Development<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">My time with AngularJS<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card teal lighten-1">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="assets/images/gruntjs.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Workflow Automation<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card teal lighten-1">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="assets/images/emberjs.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Teaching<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer teal darken-4">
+    <div class="footer-copyright">
+        <div class="container">
+            © 2014 Copyright Text
+            </p> <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </p>
+        </div>
     </div>
 </footer>

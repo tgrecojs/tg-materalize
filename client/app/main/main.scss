@@ -2,12 +2,6 @@
     margin: 20px 0;
 }
 
-#banner {
-    background-image: url('../assets/images/nyc.jpg');
-    background-size: cover;
-    height: 450px;
-}
-
 .footer {
     text-align: center;
     padding: 30px 0;
@@ -63,4 +57,8 @@ dd {
   bottom: 0px;
   width: 250px;
   left: 250px;
+}
+
+.header {
+  min-height: 200px;
 }
