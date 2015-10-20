@@ -5,7 +5,6 @@ angular.module('yoTgApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
-  'ui.bootstrap',
   'ngMessages'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
