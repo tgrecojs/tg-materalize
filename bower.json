@@ -5,6 +5,7 @@
     "Materialize": "materialize#~0.97.1",
     "angular": ">=1.2.*",
     "angular-cookies": ">=1.2.*",
+    "angular-material": "~0.11.4",
     "angular-messages": "~1.4.5",
     "angular-resource": ">=1.2.*",
     "angular-sanitize": ">=1.2.*",
@@ -21,5 +22,8 @@
   "devDependencies": {
     "angular-mocks": ">=1.2.*",
     "angular-scenario": ">=1.2.*"
+  },
+  "resolutions": {
+    "angular": "1.4.7"
   }
 }

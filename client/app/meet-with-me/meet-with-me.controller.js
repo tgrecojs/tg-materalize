@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('yoTgApp')
-  .controller('MeetWithMeCtrl', function ($scope) {
-    $scope.message = 'Hello';
-  });
+    .controller('MeetWithMeCtrl', function($scope, $mdDialog) {
+        $scope.message = 'Hello';
+
+    

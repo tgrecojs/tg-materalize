@@ -17,6 +17,7 @@
     <!-- build:css(client) app/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/Materialize/bin/materialize.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
     <link rel="stylesheet" href="bower_components/material/style.css" />
     <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css" />
     <!-- endbower -->
@@ -24,10 +25,9 @@
     <!-- build:css({.tmp,client}) app/app.css -->
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700' rel='stylesheet' type='text/css'>
     <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-            <link rel="stylesheet" href="app/app.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="app/app.css">
     <!-- injector:css -->
     <!-- endinjector -->
     <!-- endbuild -->
@@ -66,6 +66,9 @@
     <script src="bower_components/Materialize/bin/materialize.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
     <script src="bower_components/angular-messages/angular-messages.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -87,6 +90,19 @@
     <script src="components/navbar/navbar.controller.js"></script>
     <!-- endinjector -->
     <!-- endbuild -->
+    <script>
+    var options = [{
+            {
+                selector: '#staggered-test',
+                offset: 400,
+                callback: 'Materialize.showStaggeredList("#staggered-test")'
+            }, {
+                selector: '#image-test',
+                offset: 500,
+                callback: 'Materialize.fadeInImage("#image-test")'
+            }];
+            Materialize.scrollFire(options);
+    </script>
 </body>
 
 </html>
